@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -60,15 +60,12 @@
 .css-13cymwt-control {
   background-color: hsl(0deg 0% 100% / 0%);
     border-color: hsl(193.58deg 45.3% 77.06%) !important;
-    width: 40%;
-    margin: 20px auto;
 }
 .css-1xc3v61-indicatorContainer {
   color: hsl(0deg 0% 100%) !important;
     background: #aad3df;
 }
 .css-1u9des2-indicatorSeparator {
-  width: 0 !important;
     background-color: hsl(0deg 0% 100%);
 }
 
@@ -90,4 +87,24 @@
     text-align: center;
 }
   
+} */
+
+div#root {
+  overflow: hidden;
+}
+*{box-sizing: border-box;}
+
+.css-13cymwt-control {
+  background-color: hsl(0deg 0% 100% / 0%);
+    border-color: hsl(193.58deg 45.3% 77.06%) !important;
+    
+}
+.css-1xc3v61-indicatorContainer {
+  color: hsl(0deg 0% 100%) !important;
+    background: #aad3df;
+   
+}
+.css-1u9des2-indicatorSeparator {
+    background-color: hsl(0deg 0% 100%);
+    width: 0 !important;
 }

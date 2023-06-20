@@ -5,6 +5,7 @@ import axios from 'axios';
 import CountryData from './CountryData';
 import L from 'leaflet';
 import Header from './Header';
+import { MapWrapper } from './MapStyle';
 
 const icon = L.icon({ iconUrl: "/images/marker-icon.png" });
 
@@ -74,21 +75,21 @@ function Map() {
   return (
     <>
       <Header countryList={countryList} setPosition={setPosition} selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}/>
-      <div className='mapWrapper'>
-    <MapContainer
-      center={position}
-      zoom={2}
-      style={{ height: '100vh', width: '100%' }}
-      ref={setMapPosition}
-    >
-      <MapClickHandler />
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={position} icon={icon} />
-      {/* Add markers or other map elements if needed */}
-      
-    </MapContainer>
-    {selectedCountry && <CountryData selectedCountry={selectedCountry}/>}
-    </div>
+        <MapWrapper>
+          <MapContainer
+            center={position}
+            zoom={2}
+            
+            ref={setMapPosition}
+          >
+            <MapClickHandler />
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={position} icon={icon} />
+            {/* Add markers or other map elements if needed */}
+            
+          </MapContainer>
+              {selectedCountry && <CountryData selectedCountry={selectedCountry}/>}
+        </MapWrapper>
     </>
     
   );

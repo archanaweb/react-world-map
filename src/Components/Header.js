@@ -1,5 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
+import { HeaderWrapper } from './HeaderStyle';
 
 function Header({countryList, setPosition, selectedCountry, setSelectedCountry}) {
     var options=[];
@@ -14,9 +15,12 @@ const handleSelectCountry = (country)=>{
 }
   
   return (
+      <HeaderWrapper>
     <div className='searchInput'>
+
         <Select options={options} value={selectedOption} onChange={handleSelectCountry} />
     </div>
+      </HeaderWrapper>
   )
 }
 export default Header
