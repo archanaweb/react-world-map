@@ -7,6 +7,8 @@ export const CountryWrap = styled.div`
     width: var(--sidebar-width);
     & .country-details img {
         max-width: 100%;
+        box-shadow: 3px 3px 10px #bfbfbf;
+        
     }
     & .country-details h2 {
         margin-bottom: 10px;
