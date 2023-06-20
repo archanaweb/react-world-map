@@ -45,6 +45,11 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  padding: 0 40px;
+}
+.mapWrapper{
+  height: 87vh;
+  overflow: scroll;
 }
 .country-details h2 {
   margin-bottom: 10px;
@@ -65,4 +70,24 @@
 .css-1u9des2-indicatorSeparator {
   width: 0 !important;
     background-color: hsl(0deg 0% 100%);
+}
+
+@media(max-width:767px){
+  .mapWrapper {
+    flex-direction: column;
+  }
+  .css-13cymwt-control{
+    width: 94%;
+  }
+  .mapWrapper{
+    padding: 0 10px;
+    height: auto;
+  }
+  .mapWrapper .leaflet-container {
+    height: 425px;
+  }
+  .country-wrap {
+    text-align: center;
+}
+  
 }
