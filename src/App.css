@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+.searchInput {
+  position: relative;
+  z-index: 99999;
+}
+.mapWrapper {
+  background: #ddd;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.country-details h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+.css-13cymwt-control {
+  background-color: hsl(0deg 0% 100% / 0%);
+    border-color: hsl(193.58deg 45.3% 77.06%) !important;
+    width: 40%;
+    margin: 20px auto;
+}
+.css-1xc3v61-indicatorContainer {
+  color: hsl(0deg 0% 100%) !important;
+    background: #aad3df;
+}
+.css-1u9des2-indicatorSeparator {
+  width: 0 !important;
+    background-color: hsl(0deg 0% 100%);
+}
