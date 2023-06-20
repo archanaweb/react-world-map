@@ -7,7 +7,7 @@ import L from 'leaflet';
 import Header from './Header';
 import { MapWrapper } from './MapStyle';
 
-const icon = L.icon({ iconUrl: "/images/marker-icon.png" });
+const icon = L.icon({ iconUrl: "/images/marker-icon.png", iconAnchor: [20,30]});
 
 function Map() {
     // const position = [51.505, -0.09];

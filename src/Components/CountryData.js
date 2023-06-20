@@ -8,7 +8,6 @@ const getCurrencies = (currencyObj) => {
   return [...propertyKeys, ...propertValues];
 }
 const getLanguages = (languageObj) => {
-  console.log(languageObj)
   const propertValues = Object.values(languageObj);
 
   return [...propertValues];
